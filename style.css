@@ -1,26 +1,23 @@
-/*
-* Use this CSS to learn some intersting techniques,
- * in case you're wondering how I built the UI.
- * Have fun! 😁
- */
- 
- * {
-     margin: 0;
-     padding: 0;
-     box-sizing: inherit;
-    }
-    
-    html {
-        font-size: 62.5%;
-        box-sizing: border-box;
-    }
-    
-    body {
-        font-family: "Poppins", sans-serif;
-        color: #444;
-        background-color: #f3f3f3;
-        height: 100vh;
-        padding: 2rem;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: #444;
+    background-color: #f3f3f3;
+    height: 100vh;
+    padding: 2rem;
+    background-image: url(BankBAN.jpg);
+    background-size: 180rem;
+
 }
 
 nav {
@@ -31,12 +28,13 @@ nav {
 }
 
 .welcome {
-    font-size: 1.9rem;
-    font-weight: 500;
+    font-size: 3rem;
+    font-weight: 800;
+    color: white;
 }
 
 .logo {
-    height: 7.25rem;
+    height: 9.25rem;
 }
 
 .login {
@@ -63,7 +61,7 @@ nav {
 }
 
 .login__input::placeholder {
-    color: #bbb;
+    color: #000000;
 }
 
 .login__btn {
@@ -73,6 +71,7 @@ nav {
     color: inherit;
     cursor: pointer;
     transition: all 0.3s;
+    color: white;
 }
 
 .login__btn:hover,
@@ -93,7 +92,7 @@ nav {
     grid-template-rows: auto repeat(3, 15rem) auto;
     gap: 2rem;
 
-    /* NOTE This creates the fade in/out anumation */
+    /* NOTE This creates the fade in/out animation */
     opacity: 0;
     transition: all 1s;
 }
@@ -110,16 +109,21 @@ nav {
     font-size: 2.2rem;
     font-weight: 500;
     margin-bottom: -0.2rem;
+    color: white;
 }
 
 .balance__date {
     font-size: 1.4rem;
-    color: #888;
+    color: white;
 }
 
 .balance__value {
     font-size: 4.5rem;
     font-weight: 400;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 0, 0);
+    border-radius: 1rem;
+    padding: 20px;
 }
 
 /* MOVEMENTS */
@@ -174,6 +178,7 @@ nav {
     align-items: baseline;
     padding: 0 0.3rem;
     margin-top: 1rem;
+    color: white;
 }
 
 .summary__label {
@@ -181,11 +186,13 @@ nav {
     font-weight: 500;
     text-transform: uppercase;
     margin-right: 0.8rem;
+    color: white;
 }
 
 .summary__value {
     font-size: 2.2rem;
     margin-right: 2.5rem;
+    color: white;
 }
 
 .summary__value--in,
@@ -204,6 +211,7 @@ nav {
     font-size: 1.3rem;
     font-weight: 500;
     cursor: pointer;
+    color: white;
 }
 
 /* OPERATIONS */
@@ -292,8 +300,10 @@ h2 {
     margin-top: 1.9rem;
     text-align: right;
     font-size: 1.25rem;
+    color: white;
 }
 
 .timer {
     font-weight: 600;
+    color: white;
 }
